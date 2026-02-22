@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { CERTIFICATIONS, FACILITY_STATS } from "@/constants";
 import { motion } from "framer-motion";
 import { Building2, Users, Target, Factory, Clock } from "lucide-react";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -13,9 +14,9 @@ const fadeUp = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-[#faf9f8] min-h-[calc(100vh-72px)]">
+    <div className="bg-bg-secondary min-h-[calc(100vh-72px)]">
       {/* Hero Section */}
-      <section className="py-[80px] bg-gradient-to-b from-[#ffdab9]/20 to-[#faf9f8]">
+      <section className="py-20 bg-linear-to-b from-[#ffdab9]/20 to-bg-secondary">
         <Container>
           <motion.div
             initial="hidden"
@@ -24,12 +25,12 @@ export default function AboutPage() {
             variants={fadeUp}
             className="flex flex-col items-center text-center max-w-3xl mx-auto"
           >
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+            <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
               About FabricFlow
             </span>
             <h1 className="font-heading font-bold text-4xl md:text-5xl text-[#2F2F2F] leading-[1.1]">
               Precision Textile Processing,{" "}
-              <span className="text-[#f08080]">Built for Scale</span>
+              <span className="text-light-coral">Built for Scale</span>
             </h1>
             <p className="font-sans text-lg text-[#2F2F2F]/60 mt-6 leading-relaxed max-w-2xl">
               Founded over 15 years ago, FabricFlow has grown from a small
@@ -42,7 +43,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-[60px]">
+      <section className="py-15">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -53,9 +54,9 @@ export default function AboutPage() {
             >
               <Card className="p-8 bg-white border border-neutral-200 shadow-sm h-full">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-powder-blush/20 flex items-center justify-center">
                     <Target
-                      className="text-[#f08080]"
+                      className="text-light-coral"
                       size={20}
                       strokeWidth={1.5}
                     />
@@ -80,9 +81,9 @@ export default function AboutPage() {
             >
               <Card className="p-8 bg-white border border-neutral-200 shadow-sm h-full">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-powder-blush/20 flex items-center justify-center">
                     <Building2
-                      className="text-[#f08080]"
+                      className="text-light-coral"
                       size={20}
                       strokeWidth={1.5}
                     />
@@ -103,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-[60px] bg-[#ffdab9]/15">
+      <section className="py-15 bg-[#ffdab9]/15">
         <Container>
           <motion.div
             initial="hidden"
@@ -112,7 +113,7 @@ export default function AboutPage() {
             variants={fadeUp}
             className="flex flex-col items-center mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+            <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
               Quality Standards
             </span>
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -131,9 +132,9 @@ export default function AboutPage() {
                   variants={fadeUp}
                 >
                   <Card className="p-8 bg-white border border-neutral-200 shadow-sm h-full text-center">
-                    <div className="w-14 h-14 rounded-xl bg-[#f8ad9d]/20 flex items-center justify-center mx-auto mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-powder-blush/20 flex items-center justify-center mx-auto mb-4">
                       <Icon
-                        className="text-[#f08080]"
+                        className="text-light-coral"
                         size={24}
                         strokeWidth={1.5}
                       />
@@ -153,7 +154,7 @@ export default function AboutPage() {
       </section>
 
       {/* Facility Stats */}
-      <section className="py-[60px]">
+      <section className="py-15">
         <Container>
           <motion.div
             initial="hidden"
@@ -162,7 +163,7 @@ export default function AboutPage() {
             variants={fadeUp}
             className="flex flex-col items-center mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+            <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
               Our Facility
             </span>
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -183,7 +184,7 @@ export default function AboutPage() {
                 variants={fadeUp}
               >
                 <Card className="p-6 bg-white border border-neutral-200 shadow-sm text-center">
-                  <div className="font-heading font-bold text-3xl text-[#f08080]">
+                  <div className="font-heading font-bold text-3xl text-light-coral">
                     {stat.value}
                   </div>
                   <div className="font-heading font-medium text-sm text-[#2F2F2F]/70 mt-1">
@@ -200,7 +201,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team/Values */}
-      <section className="py-[60px] bg-[#ffdab9]/15">
+      <section className="py-15 bg-[#ffdab9]/15">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -209,7 +210,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               variants={fadeUp}
             >
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3 block">
+              <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3 block">
                 Our Team
               </span>
               <h2 className="font-heading font-bold text-3xl text-[#2F2F2F] mb-4">
@@ -234,7 +235,7 @@ export default function AboutPage() {
                       key={i}
                       className="inline-flex items-center gap-2 bg-white border border-neutral-200 text-[#2F2F2F]/70 text-xs font-medium px-3 py-2 rounded-full"
                     >
-                      <Icon size={14} className="text-[#f08080]" />
+                      <Icon size={14} className="text-light-coral" />
                       {item.text}
                     </div>
                   );
@@ -248,13 +249,13 @@ export default function AboutPage() {
               variants={fadeUp}
               className="flex justify-center"
             >
-              <div className="relative w-full max-w-md aspect-[4/3] rounded-2xl overflow-hidden shadow-lg ring-1 ring-neutral-200">
-                <img
+              <div className="relative w-full max-w-md aspect-4/3 rounded-2xl overflow-hidden shadow-lg ring-1 ring-neutral-200">
+                <Image
                   src="/textile-factory.png"
                   alt="FabricFlow processing facility"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
               </div>
             </motion.div>
           </div>

@@ -62,31 +62,33 @@ export const processSteps = [
     id: 1,
     title: "Grey Fabric Inspection",
     label: "Initial quality check",
-    icon: <Search className="w-7 h-7 text-[#f08080]" strokeWidth={1.5} />,
+    icon: <Search className="w-7 h-7 text-light-coral" strokeWidth={1.5} />,
   },
   {
     id: 2,
     title: "Processing",
     label: "RFD & Bleaching",
-    icon: <Settings className="w-7 h-7 text-[#f08080]" strokeWidth={1.5} />,
+    icon: <Settings className="w-7 h-7 text-light-coral" strokeWidth={1.5} />,
   },
   {
     id: 3,
     title: "Printing",
     label: "Dyeing & printing",
-    icon: <Paintbrush className="w-7 h-7 text-[#f08080]" strokeWidth={1.5} />,
+    icon: <Paintbrush className="w-7 h-7 text-light-coral" strokeWidth={1.5} />,
   },
   {
     id: 4,
     title: "Quality Check",
     label: "Final inspection",
-    icon: <ShieldCheck className="w-7 h-7 text-[#f08080]" strokeWidth={1.5} />,
+    icon: (
+      <ShieldCheck className="w-7 h-7 text-light-coral" strokeWidth={1.5} />
+    ),
   },
   {
     id: 5,
     title: "Dispatch",
     label: "Securely packed rolls",
-    icon: <Truck className="w-7 h-7 text-[#f08080]" strokeWidth={1.5} />,
+    icon: <Truck className="w-7 h-7 text-light-coral" strokeWidth={1.5} />,
   },
 ];
 

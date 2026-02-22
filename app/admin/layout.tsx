@@ -42,7 +42,7 @@ export default function AdminLayout({
   const currentPage = navItems.find((item) => pathname.startsWith(item.href));
 
   return (
-    <div className="h-screen bg-[#faf9f8] flex overflow-hidden">
+    <div className="h-screen bg-bg-secondary flex overflow-hidden">
       <aside
         className={`fixed inset-y-0 left-0 z-40 w-60 bg-white border-r border-neutral-200 flex flex-col transition-transform duration-300 lg:translate-x-0 lg:static ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
@@ -63,7 +63,7 @@ export default function AdminLayout({
                 key={item.href}
                 href={item.href}
                 onClick={() => setSidebarOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isActive ? "bg-[#f8ad9d]/15 text-[#f08080]" : "text-[#2F2F2F]/60 hover:bg-neutral-100 hover:text-[#2F2F2F]"}`}
+                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isActive ? "bg-powder-blush/15 text-light-coral" : "text-[#2F2F2F]/60 hover:bg-neutral-100 hover:text-[#2F2F2F]"}`}
               >
                 <Icon size={18} strokeWidth={isActive ? 2 : 1.5} />
                 {item.name}

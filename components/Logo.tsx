@@ -29,7 +29,9 @@ export function Logo({
       >
         Fabric
         <span
-          className={variant === "white" ? "text-[#f8ad9d]" : "text-[#f08080]"}
+          className={
+            variant === "white" ? "text-powder-blush" : "text-light-coral"
+          }
         >
           Flow
         </span>

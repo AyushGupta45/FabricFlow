@@ -6,10 +6,10 @@ import { whyChooseUs } from "@/constants";
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-[#fffdfb] py-[80px]">
+    <section className="bg-base-bg py-20">
       <Container>
         <div className="flex flex-col items-center mb-12">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             Why Us
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -28,9 +28,9 @@ export function WhyChooseUs() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="flex flex-col items-center text-center p-8 bg-white border border-neutral-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-full bg-[#f8ad9d]/15 flex items-center justify-center mb-5">
+                <div className="w-14 h-14 rounded-full bg-powder-blush/15 flex items-center justify-center mb-5">
                   <Icon
-                    className="text-[#f08080]"
+                    className="text-light-coral"
                     size={24}
                     strokeWidth={1.5}
                   />

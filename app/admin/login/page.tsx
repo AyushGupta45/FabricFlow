@@ -29,11 +29,11 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf9f8] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-bg-secondary flex items-center justify-center p-4">
       <Card className="w-full max-w-sm p-7 border border-neutral-200 shadow-sm bg-white rounded-xl">
         <div className="flex flex-col items-center mb-6">
-          <div className="w-14 h-14 rounded-full bg-[#f8ad9d]/20 flex items-center justify-center mb-4">
-            <Lock className="text-[#f08080]" size={24} />
+          <div className="w-14 h-14 rounded-full bg-powder-blush/20 flex items-center justify-center mb-4">
+            <Lock className="text-light-coral" size={24} />
           </div>
           <h1 className="font-heading font-bold text-xl text-[#2F2F2F]">
             Admin Access
@@ -53,13 +53,13 @@ export default function AdminLogin() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-11 border-neutral-300 focus-visible:ring-[#f08080]"
+            className="h-11 border-neutral-300 focus-visible:ring-light-coral"
             required
           />
           <Button
             type="submit"
             disabled={loading}
-            className="h-11 w-full bg-[#f08080] hover:bg-[#e46d6d] text-white text-sm font-semibold transition shadow-sm"
+            className="h-11 w-full bg-light-coral hover:bg-[#e46d6d] text-white text-sm font-semibold transition shadow-sm"
           >
             {loading ? "Authenticating..." : "Login"}
           </Button>

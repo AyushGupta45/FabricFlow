@@ -96,7 +96,7 @@ export function EnquiriesClient({
             placeholder="Search enquiries..."
             value={searchTerm}
             onChange={(e) => handleSearch(e.target.value)}
-            className="pl-10 h-10 text-sm border-neutral-300 bg-white focus-visible:ring-[#f08080] focus-visible:ring-2 rounded-lg shadow-sm"
+            className="pl-10 h-10 text-sm border-neutral-300 bg-white focus-visible:ring-light-coral focus-visible:ring-2 rounded-lg shadow-sm"
           />
         </div>
       </div>
@@ -117,7 +117,7 @@ export function EnquiriesClient({
                 <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-6 text-right">
                   Date
                 </TableHead>
-                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-3 w-[60px]" />
+                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-3 w-15" />
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -136,7 +136,7 @@ export function EnquiriesClient({
                     key={enq.id}
                     className="border-b border-neutral-100 hover:bg-neutral-50/50 transition-colors"
                   >
-                    <TableCell className="py-5 px-6 min-w-[200px]">
+                    <TableCell className="py-5 px-6 min-w-50">
                       <div className="font-semibold text-sm text-[#2F2F2F]">
                         {enq.name}
                       </div>

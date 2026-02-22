@@ -7,10 +7,10 @@ import { TESTIMONIALS, CLIENT_LOGOS } from "@/constants";
 
 export function Testimonials() {
   return (
-    <section className="bg-[#fffdfb] py-[80px]">
+    <section className="bg-base-bg py-20">
       <Container>
         <div className="flex flex-col items-center mb-12">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             Trusted By Industry Leaders
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -34,7 +34,7 @@ export function Testimonials() {
                   <Star
                     key={j}
                     size={14}
-                    className="text-[#f08080] fill-[#f08080]"
+                    className="text-light-coral fill-light-coral"
                   />
                 ))}
               </div>

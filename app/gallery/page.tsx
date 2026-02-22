@@ -13,10 +13,10 @@ export default function GalleryPage() {
   }
 
   return (
-    <div className="bg-[#faf9f8] min-h-[calc(100vh-72px)] py-[80px]">
+    <div className="bg-bg-secondary min-h-[calc(100vh-72px)] py-20">
       <Container>
         <div className="flex flex-col items-center mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             Our Facility
           </span>
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-[#2F2F2F] text-center">
@@ -62,9 +62,9 @@ export default function GalleryPage() {
                         alt={img.alt}
                         width={900}
                         height={500}
-                        className="w-full h-[260px] sm:h-[300px] lg:h-[340px] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                        className="w-full h-65 sm:h-75 lg:h-85 object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/5 to-transparent transition-opacity duration-300" />
                       <div className="absolute bottom-0 left-0 right-0 p-4">
                         <span className="inline-block font-heading font-semibold text-white text-sm tracking-wide px-2.5 py-1 rounded-md bg-black/30 backdrop-blur-sm">
                           {img.caption}

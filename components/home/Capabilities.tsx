@@ -43,7 +43,6 @@ function AnimatedCounter({
 }
 
 export function Capabilities() {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
@@ -58,10 +57,10 @@ export function Capabilities() {
   };
 
   return (
-    <section id="capabilities" className="bg-[#ffdab9]/30 py-[80px]">
+    <section id="capabilities" className="bg-[#ffdab9]/30 py-20">
       <Container>
         <div className="flex flex-col items-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             At Scale
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -82,7 +81,7 @@ export function Capabilities() {
               className="flex flex-col items-center gap-1 py-10 border border-neutral-200 rounded-xl bg-white shadow-sm"
             >
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl md:text-5xl font-heading font-bold text-[#f08080] leading-none">
+                <span className="text-4xl md:text-5xl font-heading font-bold text-light-coral leading-none">
                   {metric.prefix}
                   <AnimatedCounter
                     target={metric.value}

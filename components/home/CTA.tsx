@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function CTA() {
   return (
-    <section className="bg-[#2C2C2C] py-[80px]">
+    <section className="bg-[#2C2C2C] py-20">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export function CTA() {
             </p>
           </div>
           <Link href="/contact" className="shrink-0">
-            <Button className="bg-[#f08080] hover:bg-[#e46d6d] text-white font-semibold px-8 h-12 text-base rounded-lg shadow-sm gap-2">
+            <Button className="bg-light-coral hover:bg-[#e46d6d] text-white font-semibold px-8 h-12 text-base rounded-lg shadow-sm gap-2">
               Contact Sales <ArrowRight size={16} />
             </Button>
           </Link>

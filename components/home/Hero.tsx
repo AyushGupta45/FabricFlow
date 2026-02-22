@@ -33,11 +33,11 @@ export function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#faf9f8] py-[80px] overflow-hidden relative"
+      className="bg-bg-secondary py-20 overflow-hidden relative"
     >
       <motion.div
         style={{ y: bgY }}
-        className="absolute inset-0 bg-gradient-to-br from-[#ffdab9]/20 via-transparent to-[#f8ad9d]/10 pointer-events-none"
+        className="absolute inset-0 bg-linear-to-br from-[#ffdab9]/20 via-transparent to-powder-blush/10 pointer-events-none"
       />
       <Container className="grid items-center gap-12 lg:grid-cols-2 relative z-10">
         <motion.div
@@ -46,13 +46,13 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-6"
         >
-          <div className="inline-flex items-center gap-2 bg-[#f8ad9d]/20 text-[#f08080] text-xs font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full w-fit">
+          <div className="inline-flex items-center gap-2 bg-powder-blush/20 text-light-coral text-xs font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full w-fit">
             B2B Textile Processing
           </div>
 
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-[#2F2F2F] leading-[1.1]">
             From Grey Fabric to{" "}
-            <span className="text-[#f08080]">Finished Rolls</span>
+            <span className="text-light-coral">Finished Rolls</span>
           </h1>
 
           <p className="font-sans text-lg text-[#2F2F2F]/60 max-w-lg leading-relaxed">
@@ -62,7 +62,7 @@ export function Hero() {
 
           <div className="flex items-center gap-3 mt-2">
             <Link href="/contact">
-              <Button className="bg-[#f08080] hover:bg-[#e46d6d] text-white font-semibold px-6 h-12 text-base rounded-lg shadow-sm gap-2">
+              <Button className="bg-light-coral hover:bg-[#e46d6d] text-white font-semibold px-6 h-12 text-base rounded-lg shadow-sm gap-2">
                 Start Processing
                 <ArrowRight size={16} />
               </Button>
@@ -86,7 +86,11 @@ export function Hero() {
                   key={i}
                   className="inline-flex items-center gap-1.5 bg-white border border-neutral-200 text-[#2F2F2F]/70 text-xs font-medium px-3 py-1.5 rounded-full"
                 >
-                  <Icon size={13} className="text-[#f08080]" strokeWidth={2} />
+                  <Icon
+                    size={13}
+                    className="text-light-coral"
+                    strokeWidth={2}
+                  />
                   {chip.label}
                 </div>
               );
@@ -100,7 +104,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex justify-center lg:justify-end relative"
         >
-          <div className="absolute -inset-8 bg-gradient-to-br from-[#ffdab9]/40 via-[#f8ad9d]/15 to-transparent rounded-3xl blur-2xl" />
+          <div className="absolute -inset-8 bg-linear-to-br from-[#ffdab9]/40 via-powder-blush/15 to-transparent rounded-3xl blur-2xl" />
           <motion.div
             style={{ y: imageY }}
             className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10"
@@ -113,7 +117,7 @@ export function Hero() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
           </motion.div>
         </motion.div>
       </Container>

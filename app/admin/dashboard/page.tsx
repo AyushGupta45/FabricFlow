@@ -23,19 +23,19 @@ export default async function AdminDashboard() {
       title: "Total Orders",
       value: totalOrders.toString(),
       description: "Lifetime processing volume",
-      icon: <Package className="w-5 h-5 text-[#f08080]" />,
+      icon: <Package className="w-5 h-5 text-light-coral" />,
     },
     {
       title: "In Progress",
       value: pendingOrders.toString(),
       description: "Awaiting completion",
-      icon: <Clock className="w-5 h-5 text-[#f08080]" />,
+      icon: <Clock className="w-5 h-5 text-light-coral" />,
     },
     {
       title: "Enquiries",
       value: totalEnquiries.toString(),
       description: "Total inbound leads",
-      icon: <MessagesSquare className="w-5 h-5 text-[#f08080]" />,
+      icon: <MessagesSquare className="w-5 h-5 text-light-coral" />,
     },
   ];
 
@@ -100,7 +100,7 @@ export default async function AdminDashboard() {
               <CardTitle className="font-heading font-medium text-sm text-[#2F2F2F]/60">
                 {stat.title}
               </CardTitle>
-              <div className="w-8 h-8 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-powder-blush/20 flex items-center justify-center">
                 {stat.icon}
               </div>
             </CardHeader>

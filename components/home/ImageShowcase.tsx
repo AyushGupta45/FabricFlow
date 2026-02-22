@@ -11,10 +11,10 @@ export function ImageShowcase() {
   const showcaseImages = GALLERY_IMAGES.slice(0, 3);
 
   return (
-    <section className="bg-[#fffdfb] py-[80px]">
+    <section className="bg-base-bg py-20">
       <Container>
         <div className="flex flex-col items-center mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             Our Facility
           </span>
 
@@ -42,10 +42,10 @@ export function ImageShowcase() {
                 alt={img.alt}
                 width={400}
                 height={300}
-                className="w-full h-[280px] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                className="w-full h-70 object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent transition-opacity duration-300" />
 
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <span className="font-heading font-semibold text-white text-sm tracking-wide">
@@ -66,13 +66,9 @@ export function ImageShowcase() {
             }}
           >
             <Link href="/gallery" className="block h-full">
-              <div className="h-[280px] rounded-xl bg-gradient-to-br from-[#f08080] to-[#f4978e] shadow-md flex flex-col items-center justify-center text-center group cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+              <div className="h-70 rounded-xl bg-linear-to-br from-light-coral to-sweet-salmon shadow-md flex flex-col items-center justify-center text-center group cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
                 <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
-                  <Images
-                    className="text-white"
-                    size={24}
-                    strokeWidth={1.5}
-                  />
+                  <Images className="text-white" size={24} strokeWidth={1.5} />
                 </div>
 
                 <span className="font-heading font-semibold text-white text-base mb-1">

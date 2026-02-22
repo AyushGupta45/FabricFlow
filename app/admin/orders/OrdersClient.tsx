@@ -190,12 +190,12 @@ export function OrdersClient({
               placeholder="Search orders..."
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
-              className="pl-10 h-10 text-sm border-neutral-300 bg-white focus-visible:ring-[#f08080] focus-visible:ring-2 rounded-lg shadow-sm"
+              className="pl-10 h-10 text-sm border-neutral-300 bg-white focus-visible:ring-light-coral focus-visible:ring-2 rounded-lg shadow-sm"
             />
           </div>
           <Button
             onClick={() => setShowCreate(true)}
-            className="h-10 px-4 bg-[#f08080] hover:bg-[#e46d6d] text-white rounded-lg text-sm font-semibold shadow-sm shrink-0"
+            className="h-10 px-4 bg-light-coral hover:bg-[#e46d6d] text-white rounded-lg text-sm font-semibold shadow-sm shrink-0"
           >
             <Plus className="w-4 h-4" />
             Create Order
@@ -273,7 +273,7 @@ export function OrdersClient({
                   placeholder="e.g. Cotton 40s, Polyester Blend"
                   value={fabricType}
                   onChange={(e) => setFabricType(e.target.value)}
-                  className="h-10 text-sm border-neutral-300 bg-white rounded-lg focus-visible:ring-[#f08080]"
+                  className="h-10 text-sm border-neutral-300 bg-white rounded-lg focus-visible:ring-light-coral"
                 />
               </div>
 
@@ -287,7 +287,7 @@ export function OrdersClient({
                   placeholder="e.g. 25000"
                   value={meters}
                   onChange={(e) => setMeters(e.target.value)}
-                  className="h-10 text-sm border-neutral-300 bg-white rounded-lg focus-visible:ring-[#f08080]"
+                  className="h-10 text-sm border-neutral-300 bg-white rounded-lg focus-visible:ring-light-coral"
                 />
               </div>
             </div>
@@ -303,7 +303,7 @@ export function OrdersClient({
               <Button
                 onClick={handleCreate}
                 disabled={creating}
-                className="h-10 px-6 bg-[#f08080] hover:bg-[#e46d6d] text-white rounded-lg text-sm font-semibold shadow-sm"
+                className="h-10 px-6 bg-light-coral hover:bg-[#e46d6d] text-white rounded-lg text-sm font-semibold shadow-sm"
               >
                 {creating ? (
                   <>
@@ -339,10 +339,10 @@ export function OrdersClient({
                 <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-6">
                   Status
                 </TableHead>
-                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-6 w-[200px]">
+                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-6 w-50">
                   Update
                 </TableHead>
-                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-3 w-[60px]" />
+                <TableHead className="text-xs font-bold text-[#2F2F2F]/60 uppercase tracking-wider py-4 px-3 w-15" />
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -394,10 +394,10 @@ export function OrdersClient({
                         }
                         disabled={loadingId === order.orderId}
                       >
-                        <SelectTrigger className="h-9 w-[170px] border-neutral-300 text-sm focus:ring-[#f08080] bg-white rounded-lg shadow-sm">
+                        <SelectTrigger className="h-9 w-42.5 border-neutral-300 text-sm focus:ring-light-coral bg-white rounded-lg shadow-sm">
                           <div className="flex items-center gap-2">
                             {loadingId === order.orderId && (
-                              <Loader2 className="h-3.5 w-3.5 animate-spin text-[#f08080]" />
+                              <Loader2 className="h-3.5 w-3.5 animate-spin text-light-coral" />
                             )}
                             <SelectValue placeholder="Status" />
                           </div>

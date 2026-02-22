@@ -4,7 +4,6 @@ import { Container } from "@/components/layout/Container";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { services } from "@/constants";
-import type { Metadata } from "next";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -22,10 +21,10 @@ const cardVariants = {
 
 export default function ServicesPage() {
   return (
-    <div className="bg-[#faf9f8] min-h-[calc(100vh-72px)] py-[80px]">
+    <div className="bg-bg-secondary min-h-[calc(100vh-72px)] py-20">
       <Container>
         <div className="flex flex-col items-center mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             What We Offer
           </span>
           <h1 className="font-heading font-bold text-4xl md:text-5xl text-[#2F2F2F] text-center">
@@ -49,9 +48,9 @@ export default function ServicesPage() {
               <motion.div key={index} variants={cardVariants}>
                 <Card className="p-8 bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full">
                   <div className="flex flex-col gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-powder-blush/20 flex items-center justify-center">
                       <Icon
-                        className="text-[#f08080]"
+                        className="text-light-coral"
                         size={22}
                         strokeWidth={1.5}
                       />

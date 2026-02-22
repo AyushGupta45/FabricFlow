@@ -20,10 +20,10 @@ export function Quality() {
   };
 
   return (
-    <section id="quality" className="bg-[#ffdab9]/30 py-[80px]">
+    <section id="quality" className="bg-[#ffdab9]/30 py-20">
       <Container>
         <div className="flex flex-col items-center mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             Standards
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -47,9 +47,9 @@ export function Quality() {
               <motion.div key={index} variants={cardVariants}>
                 <Card className="p-7 bg-white border border-neutral-200 shadow-sm hover:shadow-md transition-shadow h-full">
                   <div className="flex items-start gap-5">
-                    <div className="w-11 h-11 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 rounded-lg bg-powder-blush/20 flex items-center justify-center shrink-0">
                       <Icon
-                        className="text-[#f08080]"
+                        className="text-light-coral"
                         size={20}
                         strokeWidth={1.5}
                       />

@@ -17,6 +17,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
   title: "FabricFlow | Premium B2B Textile Processing",
   description:
     "Scale fabric processing, reactive printing, and dyeing built for consistent bulk B2B manufacturing. Trusted by 200+ manufacturers across India.",
@@ -64,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${manrope.variable} antialiased bg-[#fffdfb] text-text-primary font-sans flex flex-col min-h-screen`}
+        className={`${inter.variable} ${manrope.variable} antialiased bg-base-bg text-text-primary font-sans flex flex-col min-h-screen`}
       >
         <LayoutShell>{children}</LayoutShell>
         <Toaster

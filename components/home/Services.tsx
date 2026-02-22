@@ -24,10 +24,10 @@ export function Services() {
   const displayedServices = services.slice(0, 3);
 
   return (
-    <section id="services" className="bg-[#ffdab9]/30 py-[80px]">
+    <section id="services" className="bg-[#ffdab9]/30 py-20">
       <Container>
         <div className="flex flex-col items-center mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#f08080] mb-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-light-coral mb-3">
             What We Do
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#2F2F2F] text-center">
@@ -51,9 +51,9 @@ export function Services() {
               <motion.div key={index} variants={cardVariants}>
                 <Card className="p-8 bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full">
                   <div className="flex flex-col gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#f8ad9d]/20 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-powder-blush/20 flex items-center justify-center">
                       <Icon
-                        className="text-[#f08080]"
+                        className="text-light-coral"
                         size={22}
                         strokeWidth={1.5}
                       />
@@ -71,7 +71,7 @@ export function Services() {
           })}
           <motion.div variants={cardVariants}>
             <Link href="/services" className="block h-full">
-              <Card className="p-8 bg-gradient-to-br from-[#f08080] to-[#f4978e] border-0 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 h-full flex flex-col items-center justify-center text-center group cursor-pointer min-h-[200px]">
+              <Card className="p-8 bg-linear-to-br from-light-coral to-sweet-salmon border-0 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 h-full flex flex-col items-center justify-center text-center group cursor-pointer min-h-50">
                 <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
                   <ArrowRight
                     className="text-white group-hover:translate-x-0.5 transition-transform"

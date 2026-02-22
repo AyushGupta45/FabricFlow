@@ -34,9 +34,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [pathname]);
 
   const handleSmoothScroll = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -62,7 +59,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full h-[72px] transition-all duration-300 ${
+      className={`sticky top-0 z-50 w-full h-18 transition-all duration-300 ${
         scrolled
           ? "bg-white/95 backdrop-blur-lg border-b border-neutral-200/80 shadow-md"
           : "bg-white border-b border-neutral-200 shadow-sm"
@@ -98,7 +95,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link href="/contact" className="ml-3">
-            <Button className="bg-[#f08080] hover:bg-[#e46d6d] text-white font-semibold text-sm px-5 h-10 rounded-lg shadow-sm">
+            <Button className="bg-light-coral hover:bg-[#e46d6d] text-white font-semibold text-sm px-5 h-10 rounded-lg shadow-sm">
               Get a Quote
             </Button>
           </Link>
@@ -121,7 +118,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="lg:hidden absolute top-[72px] left-0 w-full bg-white border-b border-neutral-200 shadow-lg overflow-hidden"
+            className="lg:hidden absolute top-18 left-0 w-full bg-white border-b border-neutral-200 shadow-lg overflow-hidden"
           >
             <nav
               className="flex flex-col px-4 py-4 gap-1"
@@ -145,7 +142,7 @@ export function Navbar() {
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Button className="w-full justify-center bg-[#f08080] hover:bg-[#e46d6d] text-white font-semibold h-11 rounded-lg shadow-sm">
+                  <Button className="w-full justify-center bg-light-coral hover:bg-[#e46d6d] text-white font-semibold h-11 rounded-lg shadow-sm">
                     Get a Quote
                   </Button>
                 </Link>
